@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>生産性分析</title>
+    <script>
+window.onload=function(){
+         document.getElementById("a").addEventListener("click",pp);
+         function pp(){
+            document.getElementById("z1").textContent="＜分析結果＞";
+            document.getElementById("z2").textContent=document.getElementById("q1").value/document.getElementById("q2").value*100;
+         }
+
+
+         document.getElementById("s").addEventListener("click",oo);
+         function oo(){
+            document.getElementById("x1").textContent="＜分析結果＞";
+            document.getElementById("x2").textContent=document.getElementById("w1").value/document.getElementById("w2").value;
+         }
+
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1 style="background-color: #004B66; color: aliceblue;">生産性分析</h1>
+    <div style="background-color: #EEEEEE;">
+    
+        <h4>労働分配率</h4>
+        <p>売上総利益<input type="number" id="q1"></p>
+        <p>人件費<input type="number" id="q2"></p>
+        <button id="a">分析</button>
+        <p id="z1" style="color: #004B66; font-size: larger;"></p>
+        <p id="z2" style="color: #004B66; font-size: larger;"></p>
+        
+        
+        <h4>付加価値労働生産性</h4>
+        <p>付加価値額<input type="number" id="w1"></p>
+        <p>平均従業員数<input type="number" id="w2"></p>
+        <button id="s">分析</button>
+        <p id="x1" style="color: #004B66; font-size: larger;"></p>
+        <p id="x2" style="color: #004B66; font-size: larger;"></p>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+
+
+</body>
+</html>

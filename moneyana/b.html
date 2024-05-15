@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>安全性分析</title>
+    <script>
+        window.onload=function(){
+         document.getElementById("a").addEventListener("click",pp);
+         function pp(){
+            document.getElementById("z1").textContent="＜分析結果＞";
+            document.getElementById("z2").textContent=document.getElementById("q1").value/document.getElementById("q2").value*100;
+         }
+
+
+         document.getElementById("s").addEventListener("click",oo);
+         function oo(){
+            document.getElementById("x1").textContent="＜分析結果＞";
+            document.getElementById("x2").textContent=document.getElementById("w1").value/document.getElementById("w2").value*100;
+         }
+
+
+         document.getElementById("d").addEventListener("click",ii);
+         function ii(){
+            document.getElementById("c1").textContent="＜分析結果＞";
+            document.getElementById("c2").textContent=document.getElementById("e1").value/document.getElementById("e2").value*100;
+         }
+
+
+         document.getElementById("f").addEventListener("click",uu);
+         function uu(){
+            document.getElementById("v1").textContent="＜分析結果＞";
+            document.getElementById("v2").textContent=document.getElementById("r1").value/document.getElementById("r2").value*100;
+         }
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1 style="background-color: #004B66; color: aliceblue;" >安全性分析</h1>
+<div style="background-color: #EEEEEE">
+
+<h4>流動比率</h4>
+<p>流動資産<input type="number" id="q1"></p>
+<p>流動負債<input type="number" id="q2"></p>
+<button id="a">分析</button>
+<p id="z1" style="color: #004B66; font-size: larger;"></p>
+<p id="z2" style="color: #004B66; font-size: larger;"></p>
+
+
+<h4>当座比率</h4>
+<p>当座資産<input type="number" id="w1"></p>
+<p>流動負債<input type="number" id="w2"></p>
+<button id="s">分析</button>
+<p id="x1" style="color: #004B66; font-size: larger;"></p>
+<p id="x2" style="color: #004B66; font-size: larger;"></p>
+
+
+<h4>負債比率</h4>
+<p>他人資本<input type="number" id="e1"></p>
+<p>自己資本<input type="number" id="e2"></p>
+<button id="d">分析</button>
+<p id="c1" style="color: #004B66; font-size: larger;"></p>
+<p id="c2" style="color: #004B66; font-size: larger;"></p>
+
+
+<h4>固定比率</h4>
+<p>固定資産<input type="number" id="r1"></p>
+<p>自己資本<input type="number" id="r2"></p>
+<button id="f">分析</button>
+<p id="v1" style="color: #004B66; font-size: larger;"></p>
+<p id="v2" style="color: #004B66; font-size: larger;"></p>
+</div>
+</body>
+</html>

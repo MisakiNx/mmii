@@ -1,0 +1,25 @@
+.a {
+    font-weight: bold;/*太字に*/
+    text-decoration: none;/*下線消す*/
+    background: #004B66;;/*背景を水色に*/
+    color:white;/*文字を白に*/
+    padding:15px 30px;/*内側の余白*/
+    border-radius: 7px;/*角を丸くする*/
+    
+    
+  }
+  /*以下カーソルを当てたとき*/
+  .a:hover {
+    background: silver;/*背景色をシルバーに*/
+    text-decoration: none;/*下線を消す*/
+  }
+  h1{
+    color: #004B66;
+    
+  }
+  .aa{
+    background-color: #eeeeee;
+    height: 400px;
+  }
+  
+  

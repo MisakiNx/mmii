@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="money.css">
+    
+    <title>収益性分析</title>
+    <script>
+        window.onload=function(){
+    document.getElementById("z1").addEventListener("click",zz1);
+    function zz1(){
+    let a=document.getElementById("q1").value;
+    let b=document.getElementById("q2").value;
+    document.getElementById("ll").textContent="＜分析結果＞"
+    document.getElementById("l").textContent="総資本経常利益率・・・"+a/b*100;
+    }
+   
+
+     document.getElementById("z2").addEventListener("click",zz2);
+    function zz2(){
+    let a=document.getElementById("w1").value;
+    let b=document.getElementById("w2").value;
+    document.getElementById("kk").textContent="＜分析結果＞"
+    document.getElementById("k").textContent="株主資本経常利益率・・・"+a/b*100;
+    }   
+
+    document.getElementById("z3").addEventListener("click",zz3);
+    function zz3(){
+        let a=document.getElementById("e1").value;
+    let b=document.getElementById("e2").value;
+    document.getElementById("jj").textContent="＜分析結果＞"
+    document.getElementById("j").textContent="経営資本営業利益率・・・"+a/b*100;
+    }
+
+
+}
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1 style="background-color: #004B66; color: aliceblue;" >収益性分析</h1>
+<div style="background-color: #EEEEEE;">
+<h4>総資本経常利益率</h4>
+
+<p>経常利益<input type="number" required id="q1"></p>
+<p>総資本<input type="number" required id="q2"></p>
+<button id="z1">分析</button>
+<p id="ll" style="color: #004B66; font-size: larger;"></p>
+<p id="l" style="color: #004B66; font-size: larger;"></p>
+
+<h4>株主資本経常利益率</h4>
+<p>経常利益<input type="number" required id="w1"></p>
+<p>自己資本<input type="number" required id="w2"></p>
+<button id="z2">分析</button>
+<p id="kk" style="color: #004B66; font-size: larger;"></p>
+<p id="k" style="color: #004B66; font-size: larger;"></p>
+
+
+
+<h4>総経営資本営業利益率</h4>
+<p>営業利益<input type="number" required id="e1"></p>
+<p>経営資本<input type="number" required id="e2"></p>
+<button id="z3">分析</button>
+<p id="jj" style="color: #004B66; font-size: larger;"></p>
+<p id="j" style="color: #004B66; font-size: larger;"></p>
+
+</div>
+</body>
+</html>
